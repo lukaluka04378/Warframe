@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1588892188 source:c:\users\lukad\desktop\code\code blocks\warframe\main.cpp
+	<iostream>
+	"dinstring.hpp"
+	"list.hpp"
+	"Pet.hpp"
+	"Robotic.hpp"
+	"Currencies.hpp"
+	"Grineer.hpp"
+	"Corpus.hpp"
+	"Frames.hpp"
+	"Mod.hpp"
+	"Navigation.hpp"
+	"Relic.hpp"
+	"Resourse.hpp"
+	"Skin.hpp"
+	"Syndicate.hpp"
+	"Primary.hpp"
+	"Secondary.hpp"
+	"Melee.hpp"
+	"Ammo.hpp"
+	"Ability.hpp"
+
+1588883629 source:c:\users\lukad\desktop\code\code blocks\warframe\dinstring.cpp
+	"dinstring.hpp"
+
+1588883860 c:\users\lukad\desktop\code\code blocks\warframe\dinstring.hpp
+	<iostream>
+
+1588879199 c:\users\lukad\desktop\code\code blocks\warframe\list.hpp
+	<stdlib.h>
+	<iostream>
+
+1588886050 c:\users\lukad\desktop\code\code blocks\warframe\pet.hpp
+	"Companion.hpp"
+	"dinstring.hpp"
+
+1588874920 c:\users\lukad\desktop\code\code blocks\warframe\companion.hpp
+
+1588887946 c:\users\lukad\desktop\code\code blocks\warframe\robotic.hpp
+	"Companion.hpp"
+
+1588881667 c:\users\lukad\desktop\code\code blocks\warframe\currencies.hpp
+	<iostream>
+
+1588885663 c:\users\lukad\desktop\code\code blocks\warframe\grineer.hpp
+	"Enemy.hpp"
+
+1588875067 c:\users\lukad\desktop\code\code blocks\warframe\enemy.hpp
+
+1588888039 c:\users\lukad\desktop\code\code blocks\warframe\corpus.hpp
+	"Enemy.hpp"
+
+1588891502 c:\users\lukad\desktop\code\code blocks\warframe\frames.hpp
+	"dinstring.hpp"
+	"list.hpp"
+	"Ability.hpp"
+	"Skin.hpp"
+
+1588892014 c:\users\lukad\desktop\code\code blocks\warframe\ability.hpp
+	"dinstring.hpp"
+
+1588890264 c:\users\lukad\desktop\code\code blocks\warframe\skin.hpp
+	"dinstring.hpp"
+
+1588883860 c:\users\lukad\desktop\code\code blocks\warframe\mod.hpp
+	"dinstring.hpp"
+
+1588875521 c:\users\lukad\desktop\code\code blocks\warframe\navigation.hpp
+
+1588884214 c:\users\lukad\desktop\code\code blocks\warframe\relic.hpp
+	"dinstring.hpp"
+
+1588875592 c:\users\lukad\desktop\code\code blocks\warframe\resourse.hpp
+	"dinstring.hpp"
+
+1588875915 c:\users\lukad\desktop\code\code blocks\warframe\syndicate.hpp
+
+1588890264 c:\users\lukad\desktop\code\code blocks\warframe\primary.hpp
+	"Weapon.hpp"
+
+1588891403 c:\users\lukad\desktop\code\code blocks\warframe\weapon.hpp
+
+1588890302 c:\users\lukad\desktop\code\code blocks\warframe\secondary.hpp
+	"Weapon.hpp"
+
+1588876086 c:\users\lukad\desktop\code\code blocks\warframe\melee.hpp
+	"Weapon.hpp"
+
+1588884771 c:\users\lukad\desktop\code\code blocks\warframe\ammo.hpp
+
