@@ -20,6 +20,7 @@
 #include "Melee.hpp"
 #include "Ammo.hpp"
 #include "Ability.hpp"
+#include "Profile.hpp"
 
 using namespace std;
 
@@ -46,20 +47,24 @@ int main()
     Skin skopija(ExcaliburZato);
 
     ///Warframe
-//    List<Ability> abilities;
-//    List<Skin> skins;
-//
-//    abilities.add(abilities.size() + 1, e1);
-//    abilities.add(abilities.size() + 1, e2);
-//    abilities.add(abilities.size() + 1, e3);
-//    abilities.add(abilities.size() + 1, e4);
-//
-//    skins.add(skins.size() + 1, ExcaliburZato);
-//
-//    Warframe Excalibur(30, "Excalibur", 300, 300, 150, abilities, skins);
-//    Warframe wprazan;
-//    Warframe wkopija(Excalibur);
-//    cout << Excalibur;
+    List<Ability> abilities;
+    List<Skin> skins;
+    List<Warframe> warframes;
+
+    abilities.add(abilities.size() + 1, e1);
+    abilities.add(abilities.size() + 1, e2);
+    abilities.add(abilities.size() + 1, e3);
+    abilities.add(abilities.size() + 1, e4);
+
+    skins.add(skins.size() + 1, ExcaliburZato);
+
+    Warframe excalibur(30, "Excalibur", 300, 300, 150, abilities, skins);
+    Warframe wprazan;
+    Warframe wkopija(excalibur);
+
+    warframes.add(warframes.size() + 1, excalibur);
+
+    cout << excalibur;
 
     ///Pet
     Pet Huras("Sanja", 100, 100, true, Raksa, false, true, 225, 375, 50, false);
@@ -72,9 +77,11 @@ int main()
     Robotic rkopija(Carrier);
 
     ///Mod
-    Mod Vitality("Vitality", Bronze, Warframe, 5);
+    List<Mod> mods;
+    Mod vitality("Vitality", Bronze, Warframe_Mod, 5);
     Mod mprazan;
-    Mod mkopija(Vitality);
+    Mod mkopija(vitality);
+    mods.add(mods.size() + 1, vitality);
 
     ///Resourse
     Resourse Irradite("Irradite", 60, Common);
@@ -98,24 +105,24 @@ int main()
     Syndicate sykopija(SteelMaridian);
 
     ///Ammo
-    Ammo Rifle(Rifle_Ammo, 60);
+    Ammo rifleAmmo(Rifle_Ammo, 60);
     Ammo amprazan;
-    Ammo amkopija(Rifle);
+    Ammo amkopija(rifleAmmo);
 
     ///Primary
-//    Primary Fulmin(60, 60, false, Rifle, Semi, 0, 100, 0, 10, 28, 2.4);
-//    Primary primprazan;
-//    Primary primkopija(Fulmin);
+    Primary primprazan;
+    Primary fulmin(60, 0, false, Rifle, Semi, 100.0, 100.0, 100.0, 10, 30, 2.4);
+    Primary primkopija(fulmin);
 
     ///Secondary
-//    Secondary Pyrana(210, 10, true, Single, Semi, 211.2, 26.4, 26.4, 2.5, 20, 2.0);
-//    Secondary secprazan;
-//    Secondary seckopija(Pyrana);
+    Secondary pyrana(210, 10, true, Single, Semi, 211.2, 26.4, 26.4, 2.5, 20, 2.0);
+    Secondary secprazan;
+    Secondary seckopija(pyrana);
 
     ///Melee
-    Melee Skana(3, 50, 600, 360, 84.0, 18.0, 18.0, 16, 5, 1.5, Sword);
+    Melee skana(3, 50, 600, 360, 84.0, 18.0, 18.0, 16, 5, 1.5, Sword);
     Melee melprazan;
-    Melee melkopija(Skana);
+    Melee melkopija(skana);
 
     ///Grineer
     Grineer Lancer(100, Ferrite, Grakata, 100, 1);

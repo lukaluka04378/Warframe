@@ -51,8 +51,6 @@ public:
     }
     ~Primary() {}
 
-
-
     ///GET
     int getAmmo() const
     {

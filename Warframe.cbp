@@ -40,11 +40,13 @@
 		<Unit filename="Enemy.hpp" />
 		<Unit filename="Frames.hpp" />
 		<Unit filename="Grineer.hpp" />
+		<Unit filename="LogIn.hpp" />
 		<Unit filename="Melee.hpp" />
 		<Unit filename="Mod.hpp" />
 		<Unit filename="Navigation.hpp" />
 		<Unit filename="Pet.hpp" />
 		<Unit filename="Primary.hpp" />
+		<Unit filename="Profile.hpp" />
 		<Unit filename="Relic.hpp" />
 		<Unit filename="Resourse.hpp" />
 		<Unit filename="Robotic.hpp" />

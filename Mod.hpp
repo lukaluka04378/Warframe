@@ -4,7 +4,7 @@
 #include "dinstring.hpp"
 
 enum Mod_Rarity {Bronze, Silver, Gold, Primed, Riven};
-enum Type {Warframe, Primary, Secondary, Malee, Companion, Archwing};
+enum Type {Warframe_Mod, Primary_Mod, Secondary_Mod, Melee_Mod, Companion_Mod, Archwing_Mod};
 
 class Mod
 {
@@ -31,7 +31,7 @@ public:
     }
     ~Mod() {}
 ///GET:
-    DinString detName() const
+    DinString getName() const
     {
         return Name;
     }
@@ -64,6 +64,14 @@ public:
     void setRank(const int r)
     {
         Rank = r;
+    }
+
+    friend ostream& operator<< (ostream &out, Mod &m)
+    {
+        out << "******************************************************" << endl;
+        out << "MOD: " << endl;
+        out << "Name: " << m.getName() << "Rarity: " << m.getRarity() << "Type: " << m.getType() << "Rank: " << m.getRank()  << endl;
+        return out;
     }
 
 };
